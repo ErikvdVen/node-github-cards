@@ -25,7 +25,7 @@ grunt build
 grunt
 ```
 
-Now you should be able to visit `http://localhost:8080/images/profile-basic' to generate your image. This is also the url you can enter as image, like in html:
+Now you should be able to visit `http://localhost:8080/images/profile-basic` to generate your image. This is also the url you can enter as image, like in html:
 ```
 <img src="http://localhost:8080/images/profile-basic" />
 ```
