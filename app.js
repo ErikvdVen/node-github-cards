@@ -1,9 +1,10 @@
 var express = require('express');
 var app = express();
 var dotenv  = require('dotenv');
-var GitHubApi = require("github");
-var node_env = process.env.NODE_ENV || 'development';
 var hbs     = require('express-hbs');
+var config = require('config-node')();
+
+var port = process.env.PORT || config.port;
 
 app.engine('hbs', hbs.express4({
   partialsDir: __dirname + '/public/cards',
@@ -16,6 +17,6 @@ app.set('views', __dirname + '/public/cards');
 app.use('/', require(__dirname + '/app/routes'));
 app.use(express.static(__dirname + '/public'));
 
-app.listen(3000, function() {
-  console.log('Listening on port 3000...')
+app.listen(port, function() {
+  console.log('Listening on port ' + port + '...')
 })

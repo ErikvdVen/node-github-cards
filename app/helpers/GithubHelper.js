@@ -1,6 +1,7 @@
 'use strict';
 
 var GitHubApi = require("github");
+var config = require('config-node')();
 
 module.exports = {
 
@@ -8,16 +9,16 @@ module.exports = {
 
 		var github = new GitHubApi({
 		    // required
-		    version: "3.0.0",
+		    version: config.github.version,
 		    // optional
 		    debug: true,
 		    protocol: "https",
-		    host: "api.github.com"
+		    host: config.github.host
 		});
 
 		github.authenticate({
 		    type: "oauth",
-		    token: "15db07106765e5a84d873093d3aa095db6219bee"
+		    token: config.github.oauthToken
 		});
 
 		return github;

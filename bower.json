@@ -1,0 +1,26 @@
+{
+  "name": "node-github-cards",
+  "description": "Creating images from your GitHub profile to share on your LinkedIn profile for example.",
+  "main": "app.js",
+  "authors": [
+    "Erik van de Ven"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "github",
+    "node"
+  ],
+  "homepage": "https://github.com/ErikvdVen/Node-GitHub-cards",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "sanitize-css": "^3.3.0",
+    "normalize-css": "^4.0.0"
+  }
+}

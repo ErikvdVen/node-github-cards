@@ -1,6 +1,7 @@
 'use strict';
 
 var githubHelper = require('../helpers/GithubHelper');
+var config = require('config-node')();
 
 module.exports = {
 
@@ -9,7 +10,7 @@ module.exports = {
 		var github = githubHelper.init();
 
 		var data = {
-		    user: "erikvdven"
+		    user: config.github.user
 		}
 
 		github.user.get(data, function(err, response) {

@@ -1,1 +1,4 @@
 node_modules
+bower_components
+development.json
+production.json

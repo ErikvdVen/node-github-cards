@@ -1,5 +1,6 @@
-var router 		= require('express').Router();
+'use strict';
 
+var router 		= require('express').Router();
 var ProfileCtrl = require('./controllers/ProfileController');
 var ImageCtrl 	= require('./controllers/ImageController');
 
