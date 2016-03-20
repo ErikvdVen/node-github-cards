@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "node-github-cards",
   "version": "1.0.0",
   "description": "Creating images from your GitHub profile to share on your LinkedIn profile for example.",
