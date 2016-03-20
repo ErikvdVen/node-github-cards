@@ -7,9 +7,8 @@ module.exports = {
 
 	profile: function(req, res) {
 
-		var profileUrl = 'http://localhost:3000/profile-basic';
+		var profileUrl = req.protocol + '://' + req.get('host') + '/profile-basic';
 		var profileImage = __dirname + '/../../public/assets/images/profile.png';
-		var imageUrl = __dirname + '/../../public/assets/images/profile.png';
 
 		var options = {
 			quality: 100,
