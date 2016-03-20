@@ -33,10 +33,10 @@ Now you should be able to visit `http://localhost:8080/images/profile-basic` to 
 ## Create Repo cards
 Coming soon!
 
-License & Credits
+##License & Credits
 
-This software is published under the MIT License.
+This software is published under the [MIT License](https://en.wikipedia.org/wiki/MIT_License).
 
-GitHub cards
+######GitHub cards
 
 This repository contains designs from Guille Paz's [github-card](https://github.com/pazguille/github-card) repository.
