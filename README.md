@@ -9,3 +9,7 @@ LinkedIn screenshot:
 ![github linkedin](http://i.imgur.com/FygjY66.png)
 
 This way you can share your github profile on LinkedIn the same way as [Stackoverflow flairs](stackoverflow.com/users/flair)
+
+
+## Create Repo cards
+Coming soon!
