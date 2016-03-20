@@ -15,9 +15,9 @@ This way you can share your github profile on LinkedIn the same way as [Stackove
 git clone https://github.com/ErikvdVen/Node-GitHub-cards.git
 cd Node-GitHub-cards
 ```
-Then you need to rename `development-sample.json` inside the config folder to `production.json` and fill in the `user` and `oauthToken` keys.
+After successfully cloning the GitHub repository, you need to rename `development-sample.json` inside the config folder to `production.json` and fill in the `user` and `oauthToken` keys. You can generate a token over here: [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new)
 
-If you successfully generated a valid production.json, you can enter the last commands in your terminal:
+After you successfully generated a valid production.json, you can enter the last commands in your terminal:
 ```
 npm install
 bower install
