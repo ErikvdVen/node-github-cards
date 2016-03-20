@@ -1,0 +1,39 @@
+{
+  "name": "node-github-cards",
+  "version": "1.0.0",
+  "description": "Creating images from your GitHub profile to share on your LinkedIn profile for example.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErikvdVen/Node-GitHub-cards.git"
+  },
+  "keywords": [
+    "github",
+    "node"
+  ],
+  "author": "Erik van de Ven",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErikvdVen/Node-GitHub-cards/issues"
+  },
+  "homepage": "https://github.com/ErikvdVen/Node-GitHub-cards#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-connect": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^1.1.0",
+    "node-sass": "^3.4.1"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "webshot": "^0.18.0"
+  }
+}
