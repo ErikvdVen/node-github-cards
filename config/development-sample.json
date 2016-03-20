@@ -2,7 +2,7 @@
 	"port": 3000,
 	"github": {
 		"host": "api.github.com",
-		"user": "<github user>"
+		"user": "<github user>",
 		"version": "3.0.0",
 		"oauthToken": "<oauthToken>"
 	}
