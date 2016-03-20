@@ -3,29 +3,37 @@
 'use strict';
 
 var webshot = require('webshot');
+var path = require('path');
 
 module.exports = {
 
 	profile: function(req, res) {
 
 		var profileUrl = 'http://localhost:3000/profile-basic';
-		var profileImage = __dirname + '/../../public/assets/images/profile.jpg';
-		
+		var profileImage = __dirname + '/../../public/assets/images/profile.png';
+		var imageUrl = __dirname + '/../../public/assets/images/profile.png';
+
 		var options = {
 			quality: 100,
-		    width: 265,
-    		height: 300
+			windowSize: {
+				width: 1280, 
+				height: 1024
+			},
+			shotSize: {
+			    width: 265,
+	    		height: 300
+	    	}
 		}
 
 		webshot(profileUrl, profileImage, options, function(err) {
-		  res.sendFile(profileImage);
+		  res.sendFile(path.resolve(profileImage));
 		});
 
 	}
 
 };
 }).call(this,"/app/controllers")
-},{"webshot":316}],2:[function(require,module,exports){
+},{"path":280,"webshot":316}],2:[function(require,module,exports){
 'use strict';
 
 var githubHelper = require('../helpers/GithubHelper');
@@ -41,7 +49,6 @@ module.exports = {
 		}
 
 		github.user.get(data, function(err, response) {
-			console.log(response);
 		    res.render('profile_basic', response);
 		});
 
@@ -42953,7 +42960,7 @@ exports.phantom = {
 , streamType: 'png'
 , siteType: 'url'
 , renderDelay: 0
-, quality: 75
+, quality: 100
 , errorIfStatusIsNot200: false
 , errorIfJSException: false
 , cookies: []

@@ -37,7 +37,7 @@
     "grunt-deploy": "^0.1.7",
     "grunt-nodemon": "^0.4.1",
     "grunt-sass": "^1.1.0",
-    "node-sass": "^3.4.1"
+    "node-sass": "3.4.1"
   },
   "dependencies": {
     "dotenv": "^2.0.0",
@@ -45,6 +45,7 @@
     "express-handlebars": "^3.0.0",
     "express-hbs": "^0.8.4",
     "github": "^0.2.4",
+    "phantomjs2": "^2.2.0",
     "promise": "^7.1.1",
     "webshot": "^0.18.0"
   }

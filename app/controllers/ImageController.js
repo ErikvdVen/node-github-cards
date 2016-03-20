@@ -13,6 +13,10 @@ module.exports = {
 
 		var options = {
 			quality: 100,
+			windowSize: {
+				width: 1280, 
+				height: 1024
+			},
 			shotSize: {
 			    width: 265,
 	    		height: 300

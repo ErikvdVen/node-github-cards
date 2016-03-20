@@ -16,10 +16,8 @@ module.exports = function (grunt) {
                 sourceMap: true,
                 require: 'susy',
                 includePaths: [
-                  './bower_components/font-awesome/scss',
-                  './bower_components/sanitize-css/lib',
-                  './bower_components/susy/sass',
-                  './bower_components/breakpoint-sass/stylesheets'
+                  './bower_components/normalize-css',
+                  './bower_components/susy/sass'
                 ]
             },
             dist: {

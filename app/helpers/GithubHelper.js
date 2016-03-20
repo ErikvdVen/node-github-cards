@@ -5,15 +5,14 @@ var GitHubApi = require("github");
 module.exports = {
 
 	init: function(){
-		
+
 		var github = new GitHubApi({
 		    // required
 		    version: "3.0.0",
 		    // optional
 		    debug: true,
 		    protocol: "https",
-		    host: "api.github.com", 
-		    timeout: 5000
+		    host: "api.github.com"
 		});
 
 		github.authenticate({

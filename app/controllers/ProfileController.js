@@ -13,7 +13,6 @@ module.exports = {
 		}
 
 		github.user.get(data, function(err, response) {
-			console.log(response);
 		    res.render('profile_basic', response);
 		});
 
