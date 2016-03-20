@@ -13,7 +13,7 @@
     "url": "git+https://github.com/ErikvdVen/Node-GitHub-cards.git"
   },
   "engines": {
-    "node": "4.2.3"
+    "node": ">=4.1.0"
   },
   "keywords": [
     "github",
