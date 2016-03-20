@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/ErikvdVen/Node-GitHub-cards.git"
   },
+  "engines": {
+    "node": "4.2.3"
+  },
   "keywords": [
     "github",
     "node"
