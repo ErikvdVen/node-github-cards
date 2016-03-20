@@ -4,7 +4,7 @@
   "description": "Creating images from your GitHub profile to share on your LinkedIn profile for example.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node app",
     "test": "NODE_ENV=test mocha --reporter spec"
   },
   "repository": {
