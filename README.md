@@ -6,6 +6,6 @@ Since LinkedIn closed the GitHub app, I didn't really know how to share my GitHu
 ![github profile](http://node-github-cards.herokuapp.com/images/profile-basic)
 
 LinkedIn screenshot:
-![github linkedin](http://imgur.com/FygjY66)
+![github linkedin](http://i.imgur.com/FygjY66.png)
 
 This way you can share your github profile on LinkedIn the same way as [Stackoverflow flairs](stackoverflow.com/users/flair)
