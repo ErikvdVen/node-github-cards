@@ -4,7 +4,8 @@
   "description": "Creating images from your GitHub profile to share on your LinkedIn profile for example.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "NODE_ENV=test mocha --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -29,11 +30,18 @@
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-uglify": "^1.0.0",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-deploy": "^0.1.7",
+    "grunt-nodemon": "^0.4.1",
     "grunt-sass": "^1.1.0",
     "node-sass": "^3.4.1"
   },
   "dependencies": {
+    "dotenv": "^2.0.0",
     "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "express-hbs": "^0.8.4",
+    "github": "^0.2.4",
+    "promise": "^7.1.1",
     "webshot": "^0.18.0"
   }
 }

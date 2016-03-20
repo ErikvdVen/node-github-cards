@@ -1,21 +1,21 @@
 var express = require('express');
 var app = express();
-var webshot = require('webshot');
-var fs      = require('fs');
-port = process.argv[2] || 8000;
+var dotenv  = require('dotenv');
+var GitHubApi = require("github");
+var node_env = process.env.NODE_ENV || 'development';
+var hbs     = require('express-hbs');
 
-app.get('/', function(req, res) {
+app.engine('hbs', hbs.express4({
+  partialsDir: __dirname + '/public/cards',
+  defaultLayout: __dirname + '/public/index.html'
+}));
 
-	var file = 'google.png';
-	webshot('google.com', 'google.png', function(err) {
+app.set('view engine', 'hbs');
+app.set('views', __dirname + '/public/cards');
 
+app.use('/', require(__dirname + '/app/routes'));
+app.use(express.static(__dirname + '/public'));
 
-	  console.log(__dirname+file);
-
-	res.sendFile(file, { root: __dirname });
-	});
-	
-});
-
-app.listen(port); //the port you want to use
-console.log("Express server running on port "+port);
+app.listen(3000, function() {
+  console.log('Listening on port 3000...')
+})

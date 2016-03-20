@@ -72,13 +72,9 @@ module.exports = function (grunt) {
                 options: { livereload: true }
             }
         },
-        connect: {
-          server: {
-            options: {
-              port: 9000,
-              base: 'public',
-              livereload: true
-            }
+        nodemon: {
+          dev: {
+            script: 'app.js'
           }
         }
     });
@@ -87,10 +83,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-nodemon');
 
-    grunt.registerTask('default', ['browserify', 'connect', 'watch']);
+    grunt.registerTask('default', ['browserify', 'nodemon', 'watch']);
     grunt.registerTask('build', ['uglify', 'sass', 'cssmin', 'copy']);
 };
